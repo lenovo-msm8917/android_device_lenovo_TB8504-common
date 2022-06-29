@@ -18,10 +18,10 @@
 set -e
 
 # Required!
-export DEVICE=TB8504
-export DEVICE_COMMON=tb-common
+export DEVICE=TB8504-common
+export DEVICE_COMMON=msm8937-common
 export VENDOR=lenovo
 
-export DEVICE_BRINGUP_YEAR=2020
+export DEVICE_BRINGUP_YEAR=2019
 
 ./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@

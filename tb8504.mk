@@ -23,7 +23,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/lenovo/TB8504/TB8504-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo/TB8504-common/TB8504-common-vendor.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
