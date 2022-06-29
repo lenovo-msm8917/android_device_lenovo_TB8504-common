@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-# inherit from common tb-common
--include device/lenovo/tb-common/BoardConfigCommon.mk
+# inherit from common msm8937-common
+-include device/lenovo/msm8937-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/lenovo/TB8504
+DEVICE_PATH := device/lenovo/TB8504-common
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := TB-8504X,TB-8504F,tb-8504x,tb-8504f,tb_8504
@@ -44,4 +44,4 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 9921059840 # 9921076224 - 16384
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
--include vendor/lenovo/TB8504/BoardConfigVendor.mk
+-include vendor/lenovo/TB8504-common/BoardConfigVendor.mk
