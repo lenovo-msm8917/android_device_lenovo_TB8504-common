@@ -15,7 +15,7 @@
 #
 
 # inherit from common msm8937-common
--include device/lenovo/msm8937-common/BoardConfigCommon.mk
+include device/lenovo/msm8937-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/lenovo/TB8504-common
 
@@ -29,10 +29,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_TS_MAKEUP := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_lenovo_tb8504
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lenovo_tb8504
-
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_tb8504_defconfig
 
@@ -44,4 +40,4 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 9921059840 # 9921076224 - 16384
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
--include vendor/lenovo/TB8504-common/BoardConfigVendor.mk
+include vendor/lenovo/TB8504-common/BoardConfigVendor.mk
